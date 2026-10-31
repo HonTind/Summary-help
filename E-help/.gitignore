@@ -1,0 +1,66 @@
+# ============================================================
+#  E-help — .gitignore
+#  只保留：源码、配置模板、PyInstaller 构建配置(spec)、工具脚本
+#  排除：构建产物、缓存、运行日志、用户/运行数据、测试生成数据
+# ============================================================
+
+# ---------- Python 字节码缓存 ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ---------- PyInstaller 构建产物（由 *.spec 重新生成） ----------
+build/
+dist/
+*.spec.bak
+
+# ---------- 打包 / 分发临时文件 ----------
+*.manifest
+*.exe
+*.pkg
+*.toc
+*.pyz
+warn-*.txt
+xref-*.html
+
+# ---------- 运行日志 ----------
+*.log
+logs/
+
+# ---------- 用户 / 运行期数据（首次运行自动创建） ----------
+Excel智能汇总助手数据/
+E-help-data/
+Excel汇总结果/
+对账单/
+
+# ---------- 测试生成数据 / 报告（由测试脚本重新生成） ----------
+e_help/stress_v154_data/
+e_help/tests/test_data/
+e_help/tests/stability_report.txt
+e_help/tests/stress_test_report.txt
+e_help/tests/*_report.txt
+e_help/tests/_phase3_test/
+
+# ---------- 输入 / 输出 Excel（业务数据，不入库） ----------
+*.xlsx
+*.xls
+*.xlsm
+
+# ---------- IDE / 编辑器 ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---------- 操作系统 ----------
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# ---------- 虚拟环境 ----------
+venv/
+.venv/
+env/
+ENV/

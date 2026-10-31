@@ -1,4 +1,7 @@
-# Summary-help · E助手
+# Summary-help · E-help
+
+项目源码位于 `E-help/`，Python 包名为 `e_help`，打包程序名称为 `E-help.exe`。
+新安装使用 `E-help-data/` 保存设置与历史记录；已有旧版数据目录时继续读取原目录，不自动移动或删除数据。
 
 本地运行的 Excel 汇总与账单对账工具，使用 Python 与 PySide6 构建 Windows 桌面界面。业务文件在本机处理；在线问题反馈仅在用户主动确认后通过系统浏览器打开，不自动上传账单。
 
@@ -9,7 +12,7 @@
 - 账单对账：按客户总额或单据逐笔比较，查看差异与来源明细。
 - 本地任务记录、规则与模板、内置使用教程。
 
-处理结果请结合来源明细复核；建议保留原始文件备份。具体计算口径见 [功能说明](Excel智能汇总助手/FEATURES.md)。
+处理结果请结合来源明细复核；建议保留原始文件备份。具体计算口径见 [功能说明](E-help/FEATURES.md)。
 
 ## 从源码运行
 
@@ -17,7 +20,7 @@
 
 ```powershell
 git clone https://github.com/HonTind/Summary-help.git
-cd Summary-help/Excel智能汇总助手
+cd Summary-help/E-help
 python -m venv .venv/qt-ui
 .venv/qt-ui/Scripts/python.exe -m pip install -r requirements.txt
 .venv/qt-ui/Scripts/python.exe -B start_gui.py
@@ -46,12 +49,12 @@ $env:QT_QPA_PLATFORM = 'offscreen'
 powershell -File tools/build_release.ps1 -Release local-001 -PythonExe .venv/qt-ui/Scripts/python.exe
 ```
 
-产物位于仓库根目录 `本地产物/Excel智能汇总助手/{build,dist}/`，不纳入 Git。onedir 版本需要保留 EXE 与同级 `_internal`，不能只复制 EXE。正式分发前应验收构建结果并核对第三方许可义务。
+产物位于仓库根目录 `本地产物/E-help/{build,dist}/`，不纳入 Git。onedir 版本需要保留 EXE 与同级 `_internal`，不能只复制 EXE。正式分发前应验收构建结果并核对第三方许可义务。
 
 ## 目录与文档
 
-- [项目详细说明](Excel智能汇总助手/README.md)
-- [架构说明](Excel智能汇总助手/ARCHITECTURE.md)
+- [项目详细说明](E-help/README.md)
+- [架构说明](E-help/ARCHITECTURE.md)
 - [贡献与问题反馈](CONTRIBUTING.md)
 - [迁移来源](MIGRATION.md)
 - [GPL-3.0-only](LICENSE) 与 [许可适用范围](LICENSING.md)
