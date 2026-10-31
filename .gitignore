@@ -1,0 +1,33 @@
+**/build/
+**/dist/
+**/__pycache__/
+*.pyc
+
+# ---------- 集中存放的本地产物：仅存在于本机，绝不提交 ----------
+# 结构见 README「构建与产物」；迁移/构建规则见 AGENTS.md「本地产物」。
+/本地产物/
+
+# Private local credentials: never package or commit. Templates can remain tracked.
+license.dat
+.env
+.env.*
+!.env.example
+!.env.sample
+.claude/
+.deepseek/
+.codex/
+credentials.json
+id_rsa
+id_ed25519
+*.pem
+*.key
+
+# Remote chat attachment cache; selected assets are copied into the project.
+/.codex-remote-attachments/
+
+# Installer/cache leftovers are not source; keep new ones out of Git.
+**/pip-build-tracker-*/
+**/pip-ephem-wheel-cache-*/
+**/pip-install-*/
+**/pip-metadata-*/
+**/pip-unpack-*/

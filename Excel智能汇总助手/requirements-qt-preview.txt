@@ -1,0 +1,3 @@
+# Optional Qt interface preview. Does not change the current Tk application.
+# Widgets / SVG / Test only; no Qt WebEngine or online service.
+PySide6-Essentials==6.12.0

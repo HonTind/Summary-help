@@ -1,0 +1,6 @@
+# Excel智能汇总助手 — 第三方依赖
+# 正式界面使用 Qt Widgets；旧 Tk 兼容入口仍可使用。
+openpyxl>=3.0
+xlrd>=2.0
+PySide6-Essentials==6.12.0
+cryptography==50.0.2
