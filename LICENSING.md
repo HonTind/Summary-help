@@ -12,7 +12,7 @@
 
 - 第三方库（包括 PySide6 / Qt、shiboken6、openpyxl、xlrd、cryptography 及传递依赖）继续适用各自许可证，不因根目录 LICENSE 而被重新授权。现有通知与源码取得渠道见 [第三方许可说明](E-help/assets/licenses/README.md)。
 - Feather 图标继续适用其 [MIT 许可](E-help/assets/ui/FEATHER-LICENSE.txt)。
-- `E-help/assets/app-icon.jpg`、`app-icon.png`、`app-icon.ico` 是用户提供的品牌素材，其来源与再分发授权尚需核实，不在本次 GPL 授权声明范围内。不能仅凭根目录 LICENSE 推定有权使用这些素材；这不限制 GPL 代码本身的权利。
+- `E-help/assets/app-icon-source.png` 及其派生的 `app-icon.png`、`app-icon.ico` 是 2026-11-01 按用户要求新生成并选用的 AI 图标，已替换原用户提供的 JPG。生成过程未使用旧图标作为参考。设计来源记录不构成独占权或商标不冲突保证；品牌素材不在本次代码 GPL 授权声明范围内，不限制 GPL 代码本身的权利。
 - 本许可不授予冒充官方发行者或声称获得品牌背书的权利。
 - 公开仓库不等于所有素材均已完成权属审计。分发二进制包前，还需按实际依赖与版本核对许可通知、相应源码及构建资料；当前文件不表示已经完成完整分发合规审查。
 

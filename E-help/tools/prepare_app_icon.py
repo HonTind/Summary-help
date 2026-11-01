@@ -1,4 +1,4 @@
-"""Convert the supplied JPG to application icons; requires developer-only Pillow.
+"""Convert the transparent source PNG to application icons; requires Pillow.
 
 Run: python tools/prepare_app_icon.py
 The full image is preserved; generated files contain no source metadata.
@@ -10,7 +10,7 @@ from PIL import Image
 
 def main():
     assets = Path(__file__).resolve().parent.parent / "assets"
-    with Image.open(assets / "app-icon.jpg") as source:
+    with Image.open(assets / "app-icon-source.png") as source:
         if source.width != source.height:
             raise ValueError("Application icon source must be square; refusing to crop.")
         icon = source.convert("RGBA").resize((256, 256), Image.Resampling.LANCZOS)

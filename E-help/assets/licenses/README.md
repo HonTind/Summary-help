@@ -2,7 +2,7 @@
 
 E-help界面使用 PySide6-Essentials / shiboken6 6.12.0（Qt for Python）和现有 openpyxl、xlrd。Qt Widgets、GUI、Core、SVG 库以独立动态库放在 onedir 的 `_internal` 中，不静态链接；本软件不限制为调试 Qt 修改而进行的逆向工程。
 
-Qt for Python 的上游许可文本随本目录及库包一起保留。标准界面图标采用 Feather 4.29.2，其完整 MIT 许可见 `assets/ui/FEATHER-LICENSE.txt`。软件 logo 使用用户提供的素材。
+Qt for Python 的上游许可文本随本目录及库包一起保留。标准界面图标采用 Feather 4.29.2，其完整 MIT 许可见 `assets/ui/FEATHER-LICENSE.txt`。软件 logo 使用 2026-11-01 新生成并经用户选用的 AI 图标，来源说明见仓库 LICENSING.md。
 
 本仓库中的 Python 源码、两份 spec、requirements.txt 与 tools/build_release.ps1 是可复现构建入口。安装 requirements.txt 后，用独立 Python 环境运行构建脚本；onedir 允许在符合兼容版本与依赖约束的情况下替换动态库。分享安装包时应随附本许可目录及上游库的源码取得渠道，不应只分享 EXE。Qt 源码及构建资料：
 
